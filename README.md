@@ -238,6 +238,7 @@ Each framework-free example has a Node build script that writes standalone pages
 | [`dial-indicator`](examples/dial-indicator) | A dial gauge on a stand over a carriage of gauge blocks. The smallest example, about 300 lines. | `node examples/dial-indicator/build.mjs` |
 | [`desk-computer`](examples/desk-computer) | A 1984-style desk computer with a keyboard you can type on. The typed line appears on a CRT drawn in the plane of the case front, and switching it off collapses the picture to a line and a dot. About 85 solids. | `node examples/desk-computer/build.mjs` |
 | [`arcade-cabinet`](examples/arcade-cabinet) | An upright arcade cabinet with its side panel off. Drop a quarter: it rolls down the coin chute past the coin-switch wire into the cash box, a pulse runs along the cable to the board, and the CRT warms up into an attract mode drawn in the plane of the tilted monitor. About 240 solids and 15 cables. | `node examples/arcade-cabinet/build.mjs` |
+| [`espresso-machine`](examples/espresso-machine) | A single-boiler espresso machine with its side panel off. Pull a shot: the pump, over-pressure valve, boiler and brew valve light up along the water path, the gauge climbs to 9 bar and a shot glass fills. The arrow keys set the grind, from a choked shot to a gusher, all from one small pressure-and-flow model. About 80 solids. | `node examples/espresso-machine/build.mjs` |
 | [`raptor-engine`](examples/raptor-engine) | A Raptor 2 engine in a test stand. It comes apart into 11 assemblies, and a WebGL plume, shock, splash and steam render between the back and front SVG. The reference for dense pipework, smooth shading, fades and the audit. The build takes a few minutes. | `node examples/raptor-engine/build.mjs` |
 | [`ripple-tank`](examples/ripple-tank) | A school ripple tank on tall legs over a paper screen, seen from 44° up. Two WebGL layers are registered to the isometric planes and driven by a pure model in `model.mjs`. | `node examples/ripple-tank/build.mjs` |
 | [`test-rig`](examples/test-rig) | A production figure from a React/Next.js site: a glass button on a spring-mounted carriage, a finger probe on a rail, and a dial gauge reading the lean. 53 solids. No build script: copy it into a React app. | none |
@@ -246,7 +247,7 @@ Each framework-free example has a Node build script that writes standalone pages
 
 The Raptor and the arcade cabinet also print. `node scripts/print.mjs examples/raptor-engine/sheet.mjs --format all` writes three A4 PDFs from the built light page: a one-page poster, a one-page technical drawing and a two-page detailed explainer. Ask for a printable version of any figure and Anatomy writes its `sheet.mjs`; see [`references/print.md`](references/print.md).
 
-`node examples/raptor-engine/build.mjs --audit`, `node examples/arcade-cabinet/build.mjs --audit` and `node examples/turning-dial/build.mjs --light --audit` also run the geometry audit. The 3D audit is slow; see [`references/3d.md`](references/3d.md).
+`node examples/raptor-engine/build.mjs --audit`, `node examples/arcade-cabinet/build.mjs --audit`, `node examples/espresso-machine/build.mjs --audit` and `node examples/turning-dial/build.mjs --light --audit` also run the geometry audit. The 3D audit is slow; see [`references/3d.md`](references/3d.md).
 
 ## How it works
 

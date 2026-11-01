@@ -1,0 +1,22 @@
+.em-stage{touch-action:pan-y;cursor:pointer}
+.em-stage:focus{outline:none}
+.em-stage:focus-visible{outline:1px solid var(--anatomy-muted);outline-offset:6px}
+.em-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+
+.em-void{fill:var(--anatomy-shade-0)}
+.em-coffee{fill:var(--anatomy-lo);opacity:.85}
+.em-crema{fill:var(--anatomy-mid);stroke:var(--anatomy-hi);stroke-width:.4px;vector-effect:non-scaling-stroke}
+.em-glass>.iso-fill{fill-opacity:.18}
+.em-glass>.iso-shade,.em-glass>.iso-top{opacity:.3}
+.em-stream{fill:none;stroke:var(--anatomy-hi);stroke-linecap:round;opacity:.85}
+.em-zone{fill:var(--anatomy-mid);stroke:none;opacity:.55}
+.em-water{fill:var(--anatomy-mid);opacity:.32;stroke:none}
+.em-level{fill:none;stroke:var(--anatomy-mid);stroke-width:.5px;vector-effect:non-scaling-stroke}
+
+.it[data-hot] .tb-body,.it[data-hot] .tb-shine,.it[data-hot] .tb-shade{fill:var(--anatomy-lit-shade)}
+.it[data-hot] .iso-edge,.it[data-hot] .tb-edge{stroke:var(--anatomy-lit)}
+.it[data-hot]>.iso-solid>.iso-edge{stroke:var(--anatomy-lit)}
+.it[data-switch][data-on]>.iso-solid>.iso-top{fill:var(--anatomy-lit-top)}
+.it[data-switch][data-on]>.iso-solid>.iso-edge{stroke:var(--anatomy-lit)}
+.it[data-lamp][data-on]>.iso-solid>.iso-top,.it[data-lamp][data-on]>.iso-solid>.iso-shade{fill:var(--anatomy-lit-top)}
+.it[data-lamp][data-on]>.iso-solid>.iso-edge{stroke:var(--anatomy-lit)}
